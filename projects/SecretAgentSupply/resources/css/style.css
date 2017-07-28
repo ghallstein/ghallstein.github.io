@@ -18,7 +18,11 @@ h4 {
   margin: 0 auto; /*So the page lines up*/
 }
 
-
+@media only screen and (max-width: 1024px){
+  body {
+    font-size: 16px;
+  }
+}
 
 /* Company Header */
 
@@ -63,6 +67,25 @@ h4 {
   margin: 0.25em 0;
 }
 
+@media only screen and (max-width: 470px) {
+  .main-banner {
+    height: 15em;
+  }
+
+  .headline {
+    width: 100%;
+    padding: 1em 2em;
+    top: 10em;
+  }
+
+  .headline h4 {
+    font-size: .77rem;
+  }
+
+  .headline h1 {
+    font-size: 1rem;
+  }
+}
 
 /* Navigation Bar */
 
@@ -83,6 +106,16 @@ nav ul {
   display: none;
 }
 
+@media only screen and (max-width: 1024px) {
+  nav ul {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    text-align: center;
+  }
+}
 
 /* Products and Business Information Section */
 
@@ -130,6 +163,32 @@ nav ul {
   padding:1em 2em;
 }
 
+@media only screen and (max-width: 1024px) {
+  .item {
+    width: 47%;
+  }
+  .item.glasses {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .items,
+  .business-info {
+    flex-wrap: wrap;
+  }
+  .item {
+    width: 90%;
+    margin: auto;
+  }
+  .item.watch {
+    display: none;
+  }
+  .info {
+    width: 90%;
+    margin: 0.5em auto;
+  }
+}
 
 /* Footer */
 
@@ -138,4 +197,10 @@ footer {
   color: white;
   padding: 5em 0;
   margin-top: 4em;
+}
+
+@media only screen and (max-width: 470px) {
+  footer {
+    text-align: cener;
+  }
 }
