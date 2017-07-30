@@ -5,7 +5,7 @@ html{
 
 body {
   font-family: Helvetica;
-  line-height: 1.4em; /* What does this do?*/
+  line-height: 1.4em;
 }
 
 h1,
@@ -201,6 +201,6 @@ footer {
 
 @media only screen and (max-width: 470px) {
   footer {
-    text-align: cener;
+    text-align: center;
   }
 }
